@@ -1,0 +1,61 @@
+<!DOCTYPE html> 
+<html> 
+    <head> 
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
+        <title>Lightstreamer StockList Demo Client for BlackBerry WebWorks</title> 
+        <script src="lib/require.js"></script>
+        <script src="lib/lightstreamer.js"></script>
+        <style>
+          body {
+            background-color: #00d8ff;
+          }
+          span {
+            font-weight: bold;
+            border-radius: 20px;
+            padding: 0 5px;
+          }
+          .stock_name {
+            width: 180px;
+            text-align: left;
+            float:left;
+          }
+          
+        </style>
+    </head> 
+    <body> 
+        <img src="img/logo.png" />
+        
+        <div id="stocks" data-source="lightstreamer"> 
+          <span class="stock_name" data-source="lightstreamer" data-field="stock_name"></span>
+          <span data-source="lightstreamer" data-field="time"></span>
+          <span class="last_price" data-source="lightstreamer" data-field="last_price"></span>
+        </div>
+        
+        <script>
+         require(["LightstreamerClient","Subscription","DynaGrid"], 
+          function(LightstreamerClient,Subscription,DynaGrid) {
+            
+            var dynaGrid = new DynaGrid("stocks",true);
+            dynaGrid.setSort("stock_name");
+            dynaGrid.addListener({
+              onVisualUpdate: function(key,info,domNode) {
+                if (info == null) {
+                  return;
+                }
+                info.setHotTime(400);
+                info.setAttribute("#9ef0ff","","backgroundColor");
+              }
+            });
+            
+            var subscription = new Subscription("MERGE",["item1","item2","item3","item4","item5"],dynaGrid.extractFieldList());
+            subscription.setDataAdapter("QUOTE_ADAPTER");
+            subscription.setRequestedSnapshot("yes");
+            subscription.addListener(dynaGrid);
+            
+            var lsClient = new LightstreamerClient("http://push.lightstreamer.com","DEMO");
+            lsClient.connect();
+            lsClient.subscribe(subscription);
+          });
+        </script>
+    </body> 
+</html>
