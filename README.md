@@ -1,5 +1,7 @@
 # Lightstreamer StockList Demo Client for BlackBerry WebWorks #
 
+![screenshot](screenshot.png)
+
 This demo shows how to use the Lightstreamer JavaScript Client library and the [BlackBerry 10 WebWorks SDK](http://developer.blackberry.com/html5/) to create a simple streaming-enabled application.
 
 Real-Time simulated Stock-List data is received from the Lightstreamer Server deployed @ [http://push.lightstreamer.com](http://push.lightstreamer.com)
