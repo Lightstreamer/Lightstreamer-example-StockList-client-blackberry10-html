@@ -1,2 +1,3 @@
-lib/
+lightstreamer.js
+require.js
 output/
