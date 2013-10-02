@@ -6,7 +6,7 @@ This demo shows how to use the Lightstreamer JavaScript Client library and the [
 
 Real-Time simulated Stock-List data is received from the Lightstreamer Server deployed @ [http://push.lightstreamer.com](http://push.lightstreamer.com)
 
-## Build and Run ##
+# Build #
 
 There are different ways to convert an Html application to run on BlackBerry 10. This README will focus on the use of the command line tools. Feel free to check the [other possibilities](http://developer.blackberry.com/html5/)
 
@@ -18,15 +18,13 @@ There are different ways to convert an Html application to run on BlackBerry 10.
 
 once ready position the command-line to this project folder.
 
-### Build ###
-
 Being $BB_HOME the folder where you installed the WebWorks SDK, run
 ```
 $BB_HOME/bbwp stocklist -o output
 ```
 an output folder will be created containing the results of the packaging; there will be two bar files, one to be used with the simulator, the other to be used with actual devices.
 
-### Run ###
+## Run the demo ##
 
 Start the BlackBerry 10 Simulator and take note of the IP address (check the bottom-left of the window the simulator is in)
 
@@ -36,12 +34,15 @@ $BB_HOME/dependencies/tools/bin/blackberry-deploy -installApp $IP output/simulat
 ```
 The app icon will appear on the simulator home screen.
 
-## See Also ##
+# See Also #
+
+*   [Lightstreamer JavaScript Client API reference](http://www.lightstreamer.com/docs/client_javascript_uni_api/index.html)
+
+## Lightstreamer Adapters needed by this demo client ##
 
 *   [Lightstreamer StockList Demo Adapter](https://github.com/Weswit/Lightstreamer-example-Stocklist-adapter-java)
 *   [Lightstreamer Reusable Metadata Adapter in Java](https://github.com/Weswit/Lightstreamer-example-ReusableMetadata-adapter-java)
-*   [Lightstreamer JavaScript Client API reference](http://www.lightstreamer.com/docs/client_javascript_uni_api/index.html)
 
-## Lightstreamer Compatibility Notes ##
+# Lightstreamer Compatibility Notes #
 
-*   Compatible with Lightstreamer Android Client library version 6.0 or newer.
+*   Compatible with Lightstreamer JavaScript Client library version 6.0 or newer.
