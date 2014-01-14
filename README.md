@@ -26,7 +26,7 @@ $BB_HOME/bbwp stocklist -o output
 ```
 an output folder will be created containing the results of the packaging; there will be two bar files, one to be used with the simulator, the other to be used with actual devices.
 
-## Run the demo ##
+## Run the Demo ##
 
 Start the BlackBerry 10 Simulator and take note of the IP address (check the bottom-left of the window the simulator is in)
 
@@ -40,7 +40,7 @@ The app icon will appear on the simulator home screen.
 
 *   [Lightstreamer JavaScript Client API reference](http://www.lightstreamer.com/docs/client_javascript_uni_api/index.html)
 
-## Lightstreamer Adapters needed by this demo client ##
+## Lightstreamer Adapters Needed by This Demo Client ##
 <!-- START RELATED_ENTRIES -->
 
 *   [Lightstreamer - Stock-List Demo - Java Adapter](https://github.com/Weswit/Lightstreamer-example-Stocklist-adapter-java)
