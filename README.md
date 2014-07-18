@@ -1,7 +1,8 @@
 # Lightstreamer - Basic Stock-List Demo - BlackBerry (WebWorks) Client
+
 <!-- START DESCRIPTION lightstreamer-example-stocklist-client-blackberry10-html -->
 
-This demo shows how to use the Lightstreamer JavaScript Client library and the [BlackBerry 10 WebWorks SDK](http://developer.blackberry.com/html5/) to create a simple streaming-enabled application.
+This demo shows how to use the <b>Lightstreamer JavaScript Client library</b> and the [BlackBerry 10 WebWorks SDK](http://developer.blackberry.com/html5/) to create a simple streaming-enabled application.
 
 ![screenshot](screenshot.png)
 
@@ -17,7 +18,7 @@ There are different ways to convert an Html application to run on BlackBerry 10.
 *   Download and install the [BlackBerry 10 WebWorks SDK](http://developer.blackberry.com/html5/download/) (scroll down a little to find them)
 *   Download and install [VMware Player](http://www.vmware.com/products/player/) for Windows or [VMware Fusion](http://www.vmware.com/products/fusion/overview.html) for Mac.
 *   Download and install the [BlackBerry 10 Simulator](https://developer.blackberry.com/devzone/develop/simulator/simulator_installing.html)
-*   Download the [Lightstreamer distribution](http://www.lightstreamer.com/download) and copy the lightstreamer.js file from the Lightstreamer JavaScript Client SDK (that is located under the DOCS-SDKs/sdk_client_javascript/lib folder) into the stocklist/lib folder of this project.
+*   Download the [Lightstreamer distribution](http://www.lightstreamer.com/download) and copy the `lightstreamer.js` file from the Lightstreamer JavaScript Client SDK (that is located under the `DOCS-SDKs/sdk_client_javascript/lib` folder) into the `stocklist/lib` folder of this project.
 *   Download the [require.js](http://requirejs.org/) file and copy it into the stocklist/lib folder of this project.
 
 once ready position the command-line to this project folder.
