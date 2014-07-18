@@ -1,14 +1,16 @@
-# Lightstreamer - Basic Stock-List Demo - BlackBerry (WebWorks) Client #
+# Lightstreamer - Basic Stock-List Demo - BlackBerry (WebWorks) Client
 <!-- START DESCRIPTION lightstreamer-example-stocklist-client-blackberry10-html -->
+
+This demo shows how to use the Lightstreamer JavaScript Client library and the [BlackBerry 10 WebWorks SDK](http://developer.blackberry.com/html5/) to create a simple streaming-enabled application.
 
 ![screenshot](screenshot.png)
 
-This demo shows how to use the Lightstreamer JavaScript Client library and the [BlackBerry 10 WebWorks SDK](http://developer.blackberry.com/html5/) to create a simple streaming-enabled application.
+## Details
 
 Real-Time simulated Stock-List data is received from the Lightstreamer Server deployed @ [http://push.lightstreamer.com](http://push.lightstreamer.com)
 <!-- END DESCRIPTION lightstreamer-example-stocklist-client-blackberry10-html -->
 
-# Build #
+## Build 
 
 There are different ways to convert an Html application to run on BlackBerry 10. This README will focus on the use of the command line tools. Feel free to check the [other possibilities](http://developer.blackberry.com/html5/)
 
@@ -26,7 +28,7 @@ $BB_HOME/bbwp stocklist -o output
 ```
 an output folder will be created containing the results of the packaging; there will be two bar files, one to be used with the simulator, the other to be used with actual devices.
 
-## Run the Demo ##
+### Run the Demo
 
 Start the BlackBerry 10 Simulator and take note of the IP address (check the bottom-left of the window the simulator is in)
 
@@ -36,11 +38,11 @@ $BB_HOME/dependencies/tools/bin/blackberry-deploy -installApp $IP output/simulat
 ```
 The app icon will appear on the simulator home screen.
 
-# See Also #
+## See Also
 
 *   [Lightstreamer JavaScript Client API reference](http://www.lightstreamer.com/docs/client_javascript_uni_api/index.html)
 
-## Lightstreamer Adapters Needed by This Demo Client ##
+### Lightstreamer Adapters Needed by This Demo Client
 <!-- START RELATED_ENTRIES -->
 
 *   [Lightstreamer - Stock-List Demo - Java Adapter](https://github.com/Weswit/Lightstreamer-example-Stocklist-adapter-java)
@@ -48,6 +50,6 @@ The app icon will appear on the simulator home screen.
 
 <!-- END RELATED_ENTRIES -->
 
-# Lightstreamer Compatibility Notes #
+## Lightstreamer Compatibility Notes
 
 *   Compatible with Lightstreamer JavaScript Client library version 6.0 or newer.
