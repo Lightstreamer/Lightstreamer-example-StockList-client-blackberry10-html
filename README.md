@@ -21,13 +21,13 @@ There are different ways to convert an Html application to run on BlackBerry 10.
 *   Download the [Lightstreamer distribution](http://www.lightstreamer.com/download) and copy the `lightstreamer.js` file from the Lightstreamer JavaScript Client SDK (that is located under the `DOCS-SDKs/sdk_client_javascript/lib` folder) into the `stocklist/lib` folder of this project.
 *   Download the [require.js](http://requirejs.org/) file and copy it into the stocklist/lib folder of this project.
 
-once ready position the command-line to this project folder.
+Once ready, position the command-line to this project folder.
 
 Being $BB_HOME the folder where you installed the WebWorks SDK, run
 ```
 $BB_HOME/bbwp stocklist -o output
 ```
-an output folder will be created containing the results of the packaging; there will be two bar files, one to be used with the simulator, the other to be used with actual devices.
+An output folder will be created containing the results of the packaging; there will be two bar files, one to be used with the simulator, the other to be used with actual devices.
 
 ### Run the Demo
 
@@ -54,3 +54,4 @@ The app icon will appear on the simulator home screen.
 ## Lightstreamer Compatibility Notes
 
 *   Compatible with Lightstreamer JavaScript Client library version 6.0 or newer.
+drop here require.js and lightstreamer.js
