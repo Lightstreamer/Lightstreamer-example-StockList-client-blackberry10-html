@@ -54,4 +54,3 @@ The app icon will appear on the simulator home screen.
 ## Lightstreamer Compatibility Notes
 
 *   Compatible with Lightstreamer JavaScript Client library version 6.0 or newer.
-drop here require.js and lightstreamer.js
