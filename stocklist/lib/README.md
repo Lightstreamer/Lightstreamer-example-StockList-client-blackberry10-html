@@ -1,1 +1,1 @@
-drop here require.js and lightstreamer.js
+drop here require.js and lightstreamer.min.js

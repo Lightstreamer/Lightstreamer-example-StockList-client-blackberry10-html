@@ -18,7 +18,7 @@ There are different ways to convert an Html application to run on BlackBerry 10.
 *   Download and install the [BlackBerry 10 WebWorks SDK](http://developer.blackberry.com/html5/download/) (scroll down a little to find them)
 *   Download and install [VMware Player](http://www.vmware.com/products/player/) for Windows or [VMware Fusion](http://www.vmware.com/products/fusion/overview.html) for Mac.
 *   Download and install the [BlackBerry 10 Simulator](https://developer.blackberry.com/devzone/develop/simulator/simulator_installing.html)
-*   Get the `lightstreamer.js` file from [npm](https://www.npmjs.com/package/lightstreamer-client-web) or [unpkg](https://unpkg.com/lightstreamer-client-web/lightstreamer.js) and copy it into the `stocklist/lib` folder of this project.
+*   Get the `lightstreamer.min.js` file from [npm](https://www.npmjs.com/package/lightstreamer-client-web) or [unpkg](https://unpkg.com/lightstreamer-client-web/lightstreamer.min.js) and copy it into the `stocklist/lib` folder of this project.
 *   Download the [require.js](http://requirejs.org/) file and copy it into the stocklist/lib folder of this project.
 
 Once ready, position the command-line to this project folder.
@@ -53,4 +53,4 @@ The app icon will appear on the simulator home screen.
 
 ## Lightstreamer Compatibility Notes
 
-*   Compatible with Lightstreamer JavaScript Client library version 6.0 or newer.
+*   Compatible with Lightstreamer JavaScript Client library version 6.0 or newer (installation instructions for version 8.0 or newer).
